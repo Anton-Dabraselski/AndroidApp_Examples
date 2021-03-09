@@ -17,5 +17,6 @@
     <string name="calculator">Calculator</string>
     <string name="todo">TODO</string>
     <string name="name">Name</string>
+    <string name="nameCalc">Name</string>
 
 </resources>

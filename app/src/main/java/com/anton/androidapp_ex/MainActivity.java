@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public Button btn, close, act_calculator;
     final  String TAG = "MainActivity";
     final String _login = "anton";
-    final int _pass = 123;
+    final String _pass = "12345";
 
     TextView loginpass = null;
 
@@ -46,15 +46,16 @@ public class MainActivity extends AppCompatActivity {
                 btn.setBackgroundColor(Color.RED);
 
                 String login_ = login.getText().toString();
-                int pass_ = Integer.parseInt(pass.getText().toString());
+                String pass_ = pass.getText().toString();
+                //int pass_ = Integer.parseInt(pass.getText().toString());
 
                 Log.i(TAG, "Login: " + login_ + " Password: " + pass_);
 
                 if(login_ == _login && pass_ == _pass){
-                    Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Login: " + login_ +", Password: " + pass_, Toast.LENGTH_LONG).show();
                 }
                 loginpass.setText("Login:" + login_ + ", Password: " + pass_);
-                Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
             }
         });
 
