@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //loginpass.setText("Login:" + login_ + ", Password: " + pass_);
                 //Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
+                login.setText("");
+                pass.setText("");
             }
         });
 
@@ -81,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alert = a_builder.create();
                 alert.setTitle("Close application");
                 alert.show();
-
                 Log.i(TAG, "OnClick - Close app");
             }
         });

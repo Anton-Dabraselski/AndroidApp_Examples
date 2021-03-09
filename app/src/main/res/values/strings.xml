@@ -5,6 +5,7 @@
     <string name="login">Login</string>
     <string name="enter">Enter</string>
     <string name="close_app">Close APP</string>
+    <string name="close_calc">Close Calculator</string>
     <string name="title_activity_calculator">Calculator</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -18,5 +19,9 @@
     <string name="todo">TODO</string>
     <string name="name">Name</string>
     <string name="nameCalc">Name</string>
+    <string name="inter_your_numbers">Inter your numbers</string>
+    <string name="sum">+</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
 
 </resources>

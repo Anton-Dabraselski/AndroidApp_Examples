@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_result"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.anton.androidapp_ex.Calculator">
@@ -14,16 +15,14 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_calculator" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -34,15 +33,78 @@
         app:layout_anchorGravity="center"
         app:popupTheme="@style/Theme.AndroidApp_Ex.PopupOverlay" />
 
-    <TextView
-        android:id="@+id/calc_res"
-        android:layout_width="174dp"
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="61dp"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:text="@string/sum"
+        android:textSize="20sp"
+        android:translationX="20dp"
+        android:translationY="190dp" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textSize="20sp"
+        android:translationX="120dp"
+        android:translationY="190dp" />
+
+    <Button
+        android:id="@+id/btn_mult"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mult"
+        android:textSize="20sp"
+        android:translationX="230dp"
+        android:translationY="190dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/close_calc"
+        android:translationX="-20dp"
+        android:translationY="460dp"
+        app:iconTint="#DA1010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="24sp"
+        android:translationX="160dp"
+        android:translationY="300dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/inter_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter you number"
+        android:inputType="textPersonName"
+        android:translationY="100dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textColor="#F6F3F3"
-        android:textSize="36sp"
-        app:layout_anchor="@+id/toolbar"
-        app:layout_anchorGravity="center" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationX="140dp"
+        android:translationY="400dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
