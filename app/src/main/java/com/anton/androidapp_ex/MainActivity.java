@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
                 }
                 loginpass.setText("Login:" + login_ + ", Password: " + pass_);
-                //Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
             }
         });
 
