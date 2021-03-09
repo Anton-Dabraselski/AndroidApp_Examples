@@ -51,10 +51,13 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.i(TAG, "Login: " + login_ + " Password: " + pass_);
 
-                if(login_ == _login && pass_ == _pass){
+                if(login_.equals(_login)  && pass_.equals(_pass)){
                     Toast.makeText(getApplicationContext(), "Login: " + login_ +", Password: " + pass_, Toast.LENGTH_LONG).show();
                 }
-                loginpass.setText("Login:" + login_ + ", Password: " + pass_);
+                else {
+                    Toast.makeText(getApplicationContext(), "Login and password is not correct!", Toast.LENGTH_LONG).show();
+                }
+                //loginpass.setText("Login:" + login_ + ", Password: " + pass_);
                 //Toast.makeText(getApplicationContext(), "Login:" + login_ + ", Password: " + pass_, Toast.LENGTH_LONG).show();
             }
         });
